@@ -1,6 +1,6 @@
-This is the first release of the plugin that has GRPC support
+New multiarch docker image
 
 Also
 
-- Added E2E integration tests
-- Fixed multi-arch images
+- Linux x86
+- Linux ARM

@@ -157,4 +157,6 @@ jobs:
       - name: Create Container image
         run: |
           echo "Building containers for ${RELEASE_TAG}"
-          gh workflow run docker-publish.yaml --ref ${RELEASE_TAG}      
+          gh workflow run docker-publish.yaml --ref ${RELEASE_TAG}  
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
